@@ -19,3 +19,11 @@ rows.forEach((element) => {
     element.appendChild(newcell);
   };
 });
+
+const cells = document.querySelectorAll('.cell');
+
+cells.forEach((element) => {
+  element.addEventListener('click', () => {
+    element.classList.toggle('hover');
+  });
+});
