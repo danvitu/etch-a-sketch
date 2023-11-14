@@ -20,6 +20,17 @@ function addCells (gridSize) {
   });
 };
 
+// Create random color
+function getRandomColor() {
+  let letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  };
+  return color;
+};
+
+// Button prompt
 const btn = document.querySelector('.button');
 btn.addEventListener('click', () => {
   clearGrid();
@@ -54,7 +65,7 @@ function hovering () {
 const cells = document.querySelectorAll('.cell');
 cells.forEach((element) => {
   element.addEventListener('mouseover', () => {
-    element.classList.add('hover');
+    element.style.backgroundColor = getRandomColor();
   });
 });
 };

@@ -19,7 +19,6 @@ body {
   color: white;
   display: flex;
   justify-content: center;
-
 }
 
 h1 {
@@ -28,8 +27,8 @@ h1 {
 }
 
 .container {
-  width: 640px;
-  height: 640px;
+  width: 360px;
+  height: 360px;
   display: flex;
   flex-direction: column;
 }
@@ -44,17 +43,13 @@ h1 {
   flex: 1;
 }
 
-.hover {
-  background-color: green;
-}
-
 .button {
   background-color: #04AA6D; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
